@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3CW-JU-ja5">
+            <objects>
+                <viewController id="rnP-Wj-THw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAt-it-JO0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5F5-hO-0UR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-YN-y8h">
+                                <rect key="frame" x="134" y="301" width="107" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="PLAY!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPressed:" destination="TwD-eJ-mbK" eventType="touchUpInside" id="Gbw-P7-Sil"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G6r-YN-y8h" firstAttribute="leading" secondItem="iMv-iH-iK1" secondAttribute="leading" constant="134" id="1us-kQ-fGt"/>
+                            <constraint firstItem="G6r-YN-y8h" firstAttribute="centerY" secondItem="5F5-hO-0UR" secondAttribute="centerY" id="2cD-aY-iYI"/>
+                            <constraint firstItem="G6r-YN-y8h" firstAttribute="centerX" secondItem="5F5-hO-0UR" secondAttribute="centerX" id="5td-dY-1yG"/>
+                            <constraint firstItem="5F5-hO-0UR" firstAttribute="centerY" secondItem="iMv-iH-iK1" secondAttribute="centerY" constant="-10" id="XVb-Er-dNx"/>
+                            <constraint firstItem="5F5-hO-0UR" firstAttribute="bottom" secondItem="iMv-iH-iK1" secondAttribute="bottom" id="hH7-08-YhJ"/>
+                            <constraint firstAttribute="width" secondItem="5F5-hO-0UR" secondAttribute="width" id="jCl-4f-MAV"/>
+                            <constraint firstItem="G6r-YN-y8h" firstAttribute="top" secondItem="iMv-iH-iK1" secondAttribute="top" constant="281" id="jRj-fu-eIP"/>
+                            <constraint firstItem="5F5-hO-0UR" firstAttribute="centerX" secondItem="iMv-iH-iK1" secondAttribute="centerX" id="yKE-Lq-IOR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iMv-iH-iK1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaM-5j-Kw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="TwD-eJ-mbK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="-203.74812593703149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1080" height="1920"/>
+    </resources>
+</document>
